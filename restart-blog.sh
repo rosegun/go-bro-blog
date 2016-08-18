@@ -1,7 +1,7 @@
 #!/bin/sh
 
-pidfile=`cat pid`
-kill $pidfile
+pid=`cat pidfile`
+kill $pid
 
 nohup hexo server &
-echo $! > pid
+echo $! > pidfile
