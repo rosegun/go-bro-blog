@@ -1,4 +1,14 @@
-# Access-Control-Allow-Origin如何工作
+-----
+title: Access-Control-Allow-Origin 作用方式
+date: 2016/08/23 13:20:00
+categories: 
+tech
+http
+tags: 
+Access-Control-Allow-Origin
+http
+-----
+# Access-Control-Allow-Origin 作用方式
 
 `Access-Control-Allow-Origin` 是一个html5中添加的CORS(Cross-Origin Resource Sharing)头
 
@@ -56,9 +66,8 @@ Content-Type: application/json
 
 服务端响应头：
 `Access-Control-Allow-Origin: http://siteA.com`
-
+原文：[How does Access-Control-Allow-Origin header work?](http://stackoverflow.com/questions/10636611/how-does-access-control-allow-origin-header-work)
 参考：
-
 * [Using CORS](http://www.html5rocks.com/en/tutorials/cors/)
 * [Understanding XMLHttpRequest over CORS](http://stackoverflow.com/a/13400954/710446)
 
