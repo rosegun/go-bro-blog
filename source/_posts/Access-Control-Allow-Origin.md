@@ -5,8 +5,6 @@ categories: tech http
 tags: Access-Control-Allow-Origin http
 ---
 
-# Access-Control-Allow-Origin 作用方式
-
 `Access-Control-Allow-Origin` 是一个html5中添加的CORS(Cross-Origin Resource Sharing)头
 
 跨域访问时，B站点 通过在响应头中添加
