@@ -2,11 +2,7 @@
 title: Access-Control-Allow-Origin 作用方式
 date: 2016/08/23 13:20:00
 categories: 
-tech
-http
 tags: 
-Access-Control-Allow-Origin
-http
 ---
 
 `Access-Control-Allow-Origin` 是一个html5中添加的CORS(Cross-Origin Resource Sharing)头
