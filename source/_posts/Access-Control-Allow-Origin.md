@@ -63,7 +63,9 @@ Content-Type: application/json
 
 服务端响应头：
 `Access-Control-Allow-Origin: http://siteA.com`
+
 原文：[How does Access-Control-Allow-Origin header work?](http://stackoverflow.com/questions/10636611/how-does-access-control-allow-origin-header-work)
+
 参考：
 * [Using CORS](http://www.html5rocks.com/en/tutorials/cors/)
 * [Understanding XMLHttpRequest over CORS](http://stackoverflow.com/a/13400954/710446)
