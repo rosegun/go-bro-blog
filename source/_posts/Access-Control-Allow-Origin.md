@@ -21,11 +21,12 @@ tags:
 
 真实发生的网络级请求实际上会稍微复杂一点。如果一个请求是*Non-Simple*的，浏览器首先会发送一个不包含数据的`OPTIONS` http请求，以此来验证服务器是否接受该站点的相应请求（GET,POST,PUT..etg.），一个*Simple*的请求需要同时满足以下两点：
 
-* 只能使用HTTP的`GET`或者`POST`方法
+* 只能使用HTTP的`GET`,`POST`或者`HEAD`方法
 * 只能使用*Simple*的请求头：
   * `Accept`
   * `Accept-Language`
   * `Content-Language`
+  * `Last-Event-ID`
   * `Content-Type` (*Simple*的请求定义中，content-type只能是`application/x-www-form-urlencoded`, `multipart/form-data`,或者 `text/plain`)
 
 不符合这种情况的请求则是一个*Non-Simple*的请求，除此之外的http方法和http头叫做*Non-Simple*方法和头
