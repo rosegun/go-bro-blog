@@ -1,6 +1,6 @@
 ---
 title: Access-Control-Allow-Origin 作用方式
-date: 2016/08/23 13:20:00
+date: 2016/10/20 11:20:00
 categories: 技术
 tags: http
 ---
