@@ -13,11 +13,11 @@ tags: http
 对于B站点任意页面或者资源，如果想要允许被A站点访问，则应在页面或者资源请求的响应中添加相应头：
 `Access-Control-Allow-Origin: http://siteA.com`
 
-## *Simple*请求
+#### *Simple*请求
 
 现代浏览器不会完全阻止跨域请求。如果A站点请求B站点的一个*页面P*，浏览器实际上会在网络级拉取*页面P*，然后检查*页面P*响应头中A站点是否在允许列表中。如果响应中没有声明A站点具有访问权限，则浏览器会触发`XMLHttpRequest's error`事件，并且阻止响应数据的执行。
 
-## *Non-Simple* 请求
+#### *Non-Simple* 请求
 
 真实发生的网络级请求实际上会稍微复杂一点。如果一个请求是*Non-Simple*的，浏览器首先会发送一个不包含数据的`OPTIONS` http请求，以此来验证服务器是否接受该站点的相应请求（GET,POST,PUT..etg.），一个*Simple*的请求需要同时满足以下两点：
 

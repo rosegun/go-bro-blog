@@ -1,289 +1,240 @@
-FATAL Port 4000 has been used. Try other port instead.
-FATAL Something's wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html
-Error: listen EADDRINUSE 0.0.0.0:4000
-    at Object.exports._errnoException (util.js:870:11)
-    at exports._exceptionWithHostPort (util.js:893:20)
-    at Server._listen2 (net.js:1234:14)
-    at listen (net.js:1270:10)
-    at net.js:1379:9
-    at nextTickCallbackWith3Args (node.js:453:9)
-    at process._tickCallback (node.js:359:17)
-FATAL listen EADDRINUSE 0.0.0.0:4000
-Error: listen EADDRINUSE 0.0.0.0:4000
-    at Object.exports._errnoException (util.js:870:11)
-    at exports._exceptionWithHostPort (util.js:893:20)
-    at Server._listen2 (net.js:1234:14)
-    at listen (net.js:1270:10)
-    at net.js:1379:9
-    at nextTickCallbackWith3Args (node.js:453:9)
-    at process._tickCallback (node.js:359:17)
-FATAL Port 4000 has been used. Try other port instead.
-FATAL Something's wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html
-Error: listen EADDRINUSE 0.0.0.0:4000
-    at Object.exports._errnoException (util.js:870:11)
-    at exports._exceptionWithHostPort (util.js:893:20)
-    at Server._listen2 (net.js:1234:14)
-    at listen (net.js:1270:10)
-    at net.js:1379:9
-    at nextTickCallbackWith3Args (node.js:453:9)
-    at process._tickCallback (node.js:359:17)
-FATAL listen EADDRINUSE 0.0.0.0:4000
-Error: listen EADDRINUSE 0.0.0.0:4000
-    at Object.exports._errnoException (util.js:870:11)
-    at exports._exceptionWithHostPort (util.js:893:20)
-    at Server._listen2 (net.js:1234:14)
-    at listen (net.js:1270:10)
-    at net.js:1379:9
-    at nextTickCallbackWith3Args (node.js:453:9)
-    at process._tickCallback (node.js:359:17)
 INFO  Start processing
 INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
 INFO  Start processing
 INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
+Unhandled rejection TypeError: /srv/go-bro-blog/themes/yilia/layout/layout.ejs:23
+    21|     </div>
+    22|     <%- partial('_partial/after-footer') %>
+ >> 23|     <%- partial('_partial/tools') %>
+    24|     <%- partial('_partial/viewer') %>
+    25|   </div>
+    26| </body>
+
+/srv/go-bro-blog/themes/yilia/layout/_partial/tools.ejs:93
+    91|           <% for (var i in theme.friends){ %>
+    92|             <li class="search-li">
+ >> 93|               <a href="<%- url_for(theme.friends[i]) %>" target="_blank" class="search-title"><i class="icon-quo-left icon"></i><%= i %></a>
+    94|             </li>
+    95|           <% } %>
+    96|         </ul>
+
+path.substring is not a function
+    at Object.urlForHelper (/srv/go-bro-blog/node_modules/hexo/lib/plugins/helper/url_for.js:9:31)
+    at Object.wrapper (/srv/go-bro-blog/node_modules/lodash/lodash.js:4994:19)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:34:4175)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:34:4923)
+    at /srv/go-bro-blog/node_modules/ejs/lib/ejs.js:255:15
+    at _compiledSync (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:122:20)
+    at View.renderSync (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:50:21)
+    at Object.partial (/srv/go-bro-blog/node_modules/hexo/lib/plugins/helper/partial.js:42:17)
+    at Object.wrapper (/srv/go-bro-blog/node_modules/lodash/lodash.js:4994:19)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:1104)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:1229)
+    at /srv/go-bro-blog/node_modules/ejs/lib/ejs.js:255:15
+    at _compiled (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:127:30)
+    at View.render (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:29:15)
+    at /srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:40:23
+    at tryCatcher (/srv/go-bro-blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise._settlePromise (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise._settlePromise0 (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise._settlePromises (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:691:18)
+    at Async._drainQueue (/srv/go-bro-blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/srv/go-bro-blog/node_modules/bluebird/js/release/async.js:148:10)
+Unhandled rejection TypeError: /srv/go-bro-blog/themes/yilia/layout/layout.ejs:23
+    21|     </div>
+    22|     <%- partial('_partial/after-footer') %>
+ >> 23|     <%- partial('_partial/tools') %>
+    24|     <%- partial('_partial/viewer') %>
+    25|   </div>
+    26| </body>
+
+/srv/go-bro-blog/themes/yilia/layout/_partial/tools.ejs:93
+    91|           <% for (var i in theme.friends){ %>
+    92|             <li class="search-li">
+ >> 93|               <a href="<%- url_for(theme.friends[i]) %>" target="_blank" class="search-title"><i class="icon-quo-left icon"></i><%= i %></a>
+    94|             </li>
+    95|           <% } %>
+    96|         </ul>
+
+path.substring is not a function
+    at Object.urlForHelper (/srv/go-bro-blog/node_modules/hexo/lib/plugins/helper/url_for.js:9:31)
+    at Object.wrapper (/srv/go-bro-blog/node_modules/lodash/lodash.js:4994:19)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:34:4175)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:34:4923)
+    at /srv/go-bro-blog/node_modules/ejs/lib/ejs.js:255:15
+    at _compiledSync (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:122:20)
+    at View.renderSync (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:50:21)
+    at Object.partial (/srv/go-bro-blog/node_modules/hexo/lib/plugins/helper/partial.js:42:17)
+    at Object.wrapper (/srv/go-bro-blog/node_modules/lodash/lodash.js:4994:19)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:1104)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:1229)
+    at /srv/go-bro-blog/node_modules/ejs/lib/ejs.js:255:15
+    at _compiled (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:127:30)
+    at View.render (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:29:15)
+    at /srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:40:23
+    at tryCatcher (/srv/go-bro-blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise._settlePromise (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise._settlePromise0 (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise._settlePromises (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:691:18)
+    at Async._drainQueue (/srv/go-bro-blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/srv/go-bro-blog/node_modules/bluebird/js/release/async.js:148:10)
+Unhandled rejection TypeError: /srv/go-bro-blog/themes/yilia/layout/layout.ejs:23
+    21|     </div>
+    22|     <%- partial('_partial/after-footer') %>
+ >> 23|     <%- partial('_partial/tools') %>
+    24|     <%- partial('_partial/viewer') %>
+    25|   </div>
+    26| </body>
+
+/srv/go-bro-blog/themes/yilia/layout/_partial/tools.ejs:93
+    91|           <% for (var i in theme.friends){ %>
+    92|             <li class="search-li">
+ >> 93|               <a href="<%- url_for(theme.friends[i]) %>" target="_blank" class="search-title"><i class="icon-quo-left icon"></i><%= i %></a>
+    94|             </li>
+    95|           <% } %>
+    96|         </ul>
+
+path.substring is not a function
+    at Object.urlForHelper (/srv/go-bro-blog/node_modules/hexo/lib/plugins/helper/url_for.js:9:31)
+    at Object.wrapper (/srv/go-bro-blog/node_modules/lodash/lodash.js:4994:19)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:34:4175)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:34:4923)
+    at /srv/go-bro-blog/node_modules/ejs/lib/ejs.js:255:15
+    at _compiledSync (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:122:20)
+    at View.renderSync (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:50:21)
+    at Object.partial (/srv/go-bro-blog/node_modules/hexo/lib/plugins/helper/partial.js:42:17)
+    at Object.wrapper (/srv/go-bro-blog/node_modules/lodash/lodash.js:4994:19)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:1104)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:1229)
+    at /srv/go-bro-blog/node_modules/ejs/lib/ejs.js:255:15
+    at _compiled (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:127:30)
+    at View.render (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:29:15)
+    at /srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:40:23
+    at tryCatcher (/srv/go-bro-blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise._settlePromise (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise._settlePromise0 (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise._settlePromises (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:691:18)
+    at Async._drainQueue (/srv/go-bro-blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/srv/go-bro-blog/node_modules/bluebird/js/release/async.js:148:10)
+Unhandled rejection TypeError: /srv/go-bro-blog/themes/yilia/layout/layout.ejs:23
+    21|     </div>
+    22|     <%- partial('_partial/after-footer') %>
+ >> 23|     <%- partial('_partial/tools') %>
+    24|     <%- partial('_partial/viewer') %>
+    25|   </div>
+    26| </body>
+
+/srv/go-bro-blog/themes/yilia/layout/_partial/tools.ejs:93
+    91|           <% for (var i in theme.friends){ %>
+    92|             <li class="search-li">
+ >> 93|               <a href="<%- url_for(theme.friends[i]) %>" target="_blank" class="search-title"><i class="icon-quo-left icon"></i><%= i %></a>
+    94|             </li>
+    95|           <% } %>
+    96|         </ul>
+
+path.substring is not a function
+    at Object.urlForHelper (/srv/go-bro-blog/node_modules/hexo/lib/plugins/helper/url_for.js:9:31)
+    at Object.wrapper (/srv/go-bro-blog/node_modules/lodash/lodash.js:4994:19)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:34:4175)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:34:4923)
+    at /srv/go-bro-blog/node_modules/ejs/lib/ejs.js:255:15
+    at _compiledSync (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:122:20)
+    at View.renderSync (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:50:21)
+    at Object.partial (/srv/go-bro-blog/node_modules/hexo/lib/plugins/helper/partial.js:42:17)
+    at Object.wrapper (/srv/go-bro-blog/node_modules/lodash/lodash.js:4994:19)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:1104)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:1229)
+    at /srv/go-bro-blog/node_modules/ejs/lib/ejs.js:255:15
+    at _compiled (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:127:30)
+    at View.render (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:29:15)
+    at /srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:40:23
+    at tryCatcher (/srv/go-bro-blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise._settlePromise (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise._settlePromise0 (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise._settlePromises (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:691:18)
+    at Async._drainQueue (/srv/go-bro-blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/srv/go-bro-blog/node_modules/bluebird/js/release/async.js:148:10)
+Unhandled rejection TypeError: /srv/go-bro-blog/themes/yilia/layout/layout.ejs:23
+    21|     </div>
+    22|     <%- partial('_partial/after-footer') %>
+ >> 23|     <%- partial('_partial/tools') %>
+    24|     <%- partial('_partial/viewer') %>
+    25|   </div>
+    26| </body>
+
+/srv/go-bro-blog/themes/yilia/layout/_partial/tools.ejs:93
+    91|           <% for (var i in theme.friends){ %>
+    92|             <li class="search-li">
+ >> 93|               <a href="<%- url_for(theme.friends[i]) %>" target="_blank" class="search-title"><i class="icon-quo-left icon"></i><%= i %></a>
+    94|             </li>
+    95|           <% } %>
+    96|         </ul>
+
+path.substring is not a function
+    at Object.urlForHelper (/srv/go-bro-blog/node_modules/hexo/lib/plugins/helper/url_for.js:9:31)
+    at Object.wrapper (/srv/go-bro-blog/node_modules/lodash/lodash.js:4994:19)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:34:4175)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:34:4923)
+    at /srv/go-bro-blog/node_modules/ejs/lib/ejs.js:255:15
+    at _compiledSync (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:122:20)
+    at View.renderSync (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:50:21)
+    at Object.partial (/srv/go-bro-blog/node_modules/hexo/lib/plugins/helper/partial.js:42:17)
+    at Object.wrapper (/srv/go-bro-blog/node_modules/lodash/lodash.js:4994:19)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:1104)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:1229)
+    at /srv/go-bro-blog/node_modules/ejs/lib/ejs.js:255:15
+    at _compiled (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:127:30)
+    at View.render (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:29:15)
+    at /srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:40:23
+    at tryCatcher (/srv/go-bro-blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise._settlePromise (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise._settlePromise0 (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise._settlePromises (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:691:18)
+    at Async._drainQueue (/srv/go-bro-blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/srv/go-bro-blog/node_modules/bluebird/js/release/async.js:148:10)
 INFO  Start processing
 INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
-INFO  Start processing
-INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
-INFO  Start processing
-INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
-ERROR Process failed: _posts/Access-Control-Allow-Origin.md
-YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 6, column 5:
-    tags: 
-        ^
-    at generateError (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:162:10)
-    at throwError (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:168:9)
-    at readBlockMapping (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1040:9)
-    at composeNode (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1326:12)
-    at readDocument (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1488:3)
-    at loadDocuments (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1544:5)
-    at Object.load (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1561:19)
-    at parseYAML (/home/work/blog/node_modules/hexo/node_modules/hexo-front-matter/lib/front_matter.js:80:21)
-    at parse (/home/work/blog/node_modules/hexo/node_modules/hexo-front-matter/lib/front_matter.js:56:12)
-    at /home/work/blog/node_modules/hexo/lib/plugins/processor/post.js:52:18
-    at tryCatcher (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/util.js:16:23)
-    at Promise._settlePromiseFromHandler (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:501:35)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:561:18)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-    at PromiseArray._resolve (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:125:19)
-    at PromiseArray._promiseFulfilled (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:143:14)
-    at PromiseArray._iterate (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:113:31)
-    at PromiseArray.init [as _init] (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:77:10)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:558:21)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-    at PromiseArray._resolve (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:125:19)
-    at PromiseArray._promiseFulfilled (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:143:14)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:566:26)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-    at Promise._resolveCallback (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:425:57)
-    at Promise._settlePromiseFromHandler (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:516:17)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:561:18)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-FATAL Port 4000 has been used. Try other port instead.
-FATAL Something's wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html
-Error: listen EADDRINUSE 0.0.0.0:4000
-    at Object.exports._errnoException (util.js:870:11)
-    at exports._exceptionWithHostPort (util.js:893:20)
-    at Server._listen2 (net.js:1234:14)
-    at listen (net.js:1270:10)
-    at net.js:1379:9
-    at nextTickCallbackWith3Args (node.js:453:9)
-    at process._tickCallback (node.js:359:17)
-FATAL listen EADDRINUSE 0.0.0.0:4000
-Error: listen EADDRINUSE 0.0.0.0:4000
-    at Object.exports._errnoException (util.js:870:11)
-    at exports._exceptionWithHostPort (util.js:893:20)
-    at Server._listen2 (net.js:1234:14)
-    at listen (net.js:1270:10)
-    at net.js:1379:9
-    at nextTickCallbackWith3Args (node.js:453:9)
-    at process._tickCallback (node.js:359:17)
-INFO  Start processing
-ERROR Process failed: _posts/Access-Control-Allow-Origin.md
-YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 6, column 5:
-    tags: 
-        ^
-    at generateError (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:162:10)
-    at throwError (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:168:9)
-    at readBlockMapping (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1040:9)
-    at composeNode (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1326:12)
-    at readDocument (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1488:3)
-    at loadDocuments (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1544:5)
-    at Object.load (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1561:19)
-    at parseYAML (/home/work/blog/node_modules/hexo/node_modules/hexo-front-matter/lib/front_matter.js:80:21)
-    at parse (/home/work/blog/node_modules/hexo/node_modules/hexo-front-matter/lib/front_matter.js:56:12)
-    at /home/work/blog/node_modules/hexo/lib/plugins/processor/post.js:52:18
-    at tryCatcher (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/util.js:16:23)
-    at Promise._settlePromiseFromHandler (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:501:35)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:561:18)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-    at PromiseArray._resolve (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:125:19)
-    at PromiseArray._promiseFulfilled (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:143:14)
-    at PromiseArray._iterate (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:113:31)
-    at PromiseArray.init [as _init] (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:77:10)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:558:21)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-    at PromiseArray._resolve (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:125:19)
-    at PromiseArray._promiseFulfilled (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:143:14)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:566:26)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-    at Promise._resolveCallback (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:425:57)
-    at Promise._settlePromiseFromHandler (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:516:17)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:561:18)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
-INFO  Start processing
-ERROR Process failed: _posts/Access-Control-Allow-Origin.md
-YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 6, column 5:
-    tags: 
-        ^
-    at generateError (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:162:10)
-    at throwError (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:168:9)
-    at readBlockMapping (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1040:9)
-    at composeNode (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1326:12)
-    at readDocument (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1488:3)
-    at loadDocuments (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1544:5)
-    at Object.load (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1561:19)
-    at parseYAML (/home/work/blog/node_modules/hexo/node_modules/hexo-front-matter/lib/front_matter.js:80:21)
-    at parse (/home/work/blog/node_modules/hexo/node_modules/hexo-front-matter/lib/front_matter.js:56:12)
-    at /home/work/blog/node_modules/hexo/lib/plugins/processor/post.js:52:18
-    at tryCatcher (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/util.js:16:23)
-    at Promise._settlePromiseFromHandler (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:501:35)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:561:18)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-    at PromiseArray._resolve (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:125:19)
-    at PromiseArray._promiseFulfilled (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:143:14)
-    at PromiseArray._iterate (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:113:31)
-    at PromiseArray.init [as _init] (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:77:10)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:558:21)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-    at PromiseArray._resolve (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:125:19)
-    at PromiseArray._promiseFulfilled (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:143:14)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:566:26)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-    at Promise._resolveCallback (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:425:57)
-    at Promise._settlePromiseFromHandler (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:516:17)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:561:18)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
-INFO  Start processing
-ERROR Process failed: _posts/Access-Control-Allow-Origin.md
-YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 6, column 5:
-    tags: 
-        ^
-    at generateError (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:162:10)
-    at throwError (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:168:9)
-    at readBlockMapping (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1040:9)
-    at composeNode (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1326:12)
-    at readDocument (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1488:3)
-    at loadDocuments (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1544:5)
-    at Object.load (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1561:19)
-    at parseYAML (/home/work/blog/node_modules/hexo/node_modules/hexo-front-matter/lib/front_matter.js:80:21)
-    at parse (/home/work/blog/node_modules/hexo/node_modules/hexo-front-matter/lib/front_matter.js:56:12)
-    at /home/work/blog/node_modules/hexo/lib/plugins/processor/post.js:52:18
-    at tryCatcher (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/util.js:16:23)
-    at Promise._settlePromiseFromHandler (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:501:35)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:561:18)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-    at PromiseArray._resolve (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:125:19)
-    at PromiseArray._promiseFulfilled (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:143:14)
-    at PromiseArray._iterate (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:113:31)
-    at PromiseArray.init [as _init] (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:77:10)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:558:21)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-    at PromiseArray._resolve (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:125:19)
-    at PromiseArray._promiseFulfilled (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:143:14)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:566:26)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-    at Promise._resolveCallback (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:425:57)
-    at Promise._settlePromiseFromHandler (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:516:17)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:561:18)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
-INFO  Start processing
-ERROR Process failed: _posts/Access-Control-Allow-Origin.md
-YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 6, column 5:
-    tags: 
-        ^
-    at generateError (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:162:10)
-    at throwError (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:168:9)
-    at readBlockMapping (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1040:9)
-    at composeNode (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1326:12)
-    at readDocument (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1488:3)
-    at loadDocuments (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1544:5)
-    at Object.load (/home/work/blog/node_modules/hexo/node_modules/js-yaml/lib/js-yaml/loader.js:1561:19)
-    at parseYAML (/home/work/blog/node_modules/hexo/node_modules/hexo-front-matter/lib/front_matter.js:80:21)
-    at parse (/home/work/blog/node_modules/hexo/node_modules/hexo-front-matter/lib/front_matter.js:56:12)
-    at /home/work/blog/node_modules/hexo/lib/plugins/processor/post.js:52:18
-    at tryCatcher (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/util.js:16:23)
-    at Promise._settlePromiseFromHandler (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:501:35)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:561:18)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-    at PromiseArray._resolve (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:125:19)
-    at PromiseArray._promiseFulfilled (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:143:14)
-    at PromiseArray._iterate (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:113:31)
-    at PromiseArray.init [as _init] (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:77:10)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:558:21)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-    at PromiseArray._resolve (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:125:19)
-    at PromiseArray._promiseFulfilled (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise_array.js:143:14)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:566:26)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-    at Promise._resolveCallback (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:425:57)
-    at Promise._settlePromiseFromHandler (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:516:17)
-    at Promise._settlePromise (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:561:18)
-    at Promise._settlePromise0 (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:606:10)
-    at Promise._settlePromises (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:685:18)
-    at Promise._fulfill (/home/work/blog/node_modules/hexo/node_modules/bluebird/js/release/promise.js:630:18)
-INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
-INFO  Start processing
-INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
-INFO  Start processing
-INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
-INFO  Start processing
-INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
-INFO  Start processing
-INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
-INFO  Start processing
-INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
-INFO  Start processing
-INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
-INFO  Start processing
-INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
+Unhandled rejection TypeError: /srv/go-bro-blog/themes/yilia/layout/layout.ejs:23
+    21|     </div>
+    22|     <%- partial('_partial/after-footer') %>
+ >> 23|     <%- partial('_partial/tools') %>
+    24|     <%- partial('_partial/viewer') %>
+    25|   </div>
+    26| </body>
+
+/srv/go-bro-blog/themes/yilia/layout/_partial/tools.ejs:93
+    91|           <% for (var i in theme.friends){ %>
+    92|             <li class="search-li">
+ >> 93|               <a href="<%- url_for(theme.friends[i]) %>" target="_blank" class="search-title"><i class="icon-quo-left icon"></i><%= i %></a>
+    94|             </li>
+    95|           <% } %>
+    96|         </ul>
+
+path.substring is not a function
+    at Object.urlForHelper (/srv/go-bro-blog/node_modules/hexo/lib/plugins/helper/url_for.js:9:31)
+    at Object.wrapper (/srv/go-bro-blog/node_modules/lodash/lodash.js:4994:19)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:34:4175)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:34:4923)
+    at /srv/go-bro-blog/node_modules/ejs/lib/ejs.js:255:15
+    at _compiledSync (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:122:20)
+    at View.renderSync (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:50:21)
+    at Object.partial (/srv/go-bro-blog/node_modules/hexo/lib/plugins/helper/partial.js:42:17)
+    at Object.wrapper (/srv/go-bro-blog/node_modules/lodash/lodash.js:4994:19)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:1104)
+    at eval (eval at <anonymous> (/srv/go-bro-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:30:1229)
+    at /srv/go-bro-blog/node_modules/ejs/lib/ejs.js:255:15
+    at _compiled (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:127:30)
+    at View.render (/srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:29:15)
+    at /srv/go-bro-blog/node_modules/hexo/lib/theme/view.js:40:23
+    at tryCatcher (/srv/go-bro-blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:510:31)
+    at Promise._settlePromise (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:567:18)
+    at Promise._settlePromise0 (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:612:10)
+    at Promise._settlePromises (/srv/go-bro-blog/node_modules/bluebird/js/release/promise.js:691:18)
+    at Async._drainQueue (/srv/go-bro-blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/srv/go-bro-blog/node_modules/bluebird/js/release/async.js:148:10)
