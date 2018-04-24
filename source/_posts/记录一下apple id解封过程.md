@@ -2,7 +2,7 @@
 title: 记录一下apple id解封过程
 date: 2017/10/10 11:30:00
 categories: 技术
-img: https://ws1.sinaimg.cn/large/006tNc79gy1fkcyuv53hnj319c0h6wfx.jpg
+img: https://ws3.sinaimg.cn/large/006tKfTcly1fqnmhncvdej30e2073t96.jpg
 tags: apple,苹果
 ---
 

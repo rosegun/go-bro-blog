@@ -2,6 +2,7 @@
 title: Access-Control-Allow-Origin 作用方式
 date: 2016/08/23 13:20:00
 categories: 技术
+img: https://ws4.sinaimg.cn/large/006tKfTcly1fqnmk6gluxj30xc0oujvr.jpg
 tags: http
 ---
 

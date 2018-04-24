@@ -2,6 +2,7 @@
 title: Spring MVC 使用html静态页面做欢迎页
 date: 2017/06/09 13:20:00
 categories: 技术
+img: https://ws3.sinaimg.cn/large/006tKfTcly1fqnmf4tslhj30v60hqe81.jpg
 tags: spring
 ---
 最近的一个项目做了前后端的分离，前端使用vuejs+elementUI+webpack,后端使用spring mvc，但是蛋疼的需要部署到一个tomcat上。所以有了以下辗转反侧的配置过程，简单做下记录。
